@@ -7,6 +7,17 @@ About instant view:
 Examples:
   telegra.ph/api
   telegra.ph/europa-04-19
+
+Assumptions about page structure:
+  tl_page_wrap - centering, restrict width
+    tl_page - add padding: top, bottom
+      tl_article - container, not add padding
+        tl_article_header - header of the article
+        tl_editor - another layer
+          gl-editor - contains html elements, imgs, pragraph etc.
+          ... - hide
+        tl_article_buttons - hide for not author (edit and publish buttons)
+
 -->
 <html>
 <head>
