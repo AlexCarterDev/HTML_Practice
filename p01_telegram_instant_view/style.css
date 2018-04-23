@@ -1,0 +1,4 @@
+/* insert some text before time tag */
+time::before {
+  content: "\2022"; /* bullet */
+}
