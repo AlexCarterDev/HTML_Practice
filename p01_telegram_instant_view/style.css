@@ -3,6 +3,7 @@ body {
   margin: 0;
 }
 
+
 .page_wrap {
   max-width: 732px;
   /* top=0 right=auto bottom=top left=right */
@@ -17,7 +18,26 @@ body {
 .content ::-moz-selection {
   background: #dbdbdb; /* gray */
 }
-.article_header {
+
+.article {
+  /* Width and height apply to all parts of the element:
+  content, padding and borders */
+  box-sizing: border-box;
+  /* using text cursor */
+  cursor: text;
+  line-height: 1.42;
+  height: 100%;
+  /* An outline is a line that is drawn around elements, outside the borders */
+  outline: 0;
+  overflow: auto;
+  padding: 12px 15px;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.article_header, .article {
   font-family: CustomSerif,Georgia,Cambria,'Times New Roman',serif;
   /* Normal font weight. Same as 400.*/
   font-weight: normal;
@@ -28,14 +48,12 @@ body {
   padding: 0;
   margin: 0;
   /* The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque). */
-  color: rgba(0,0,0,0.8);
+  color: rgba(0,0,0,.8);
 }
 .article_header {
   /* Displays an element as a block element (like <p>). It starts on a new line,
   and takes up the whole width */
   display: block;
-}
-.article_header {
   /* Allows unbreakable words to be broken */
   word-wrap: break-word;
 }
@@ -61,8 +79,72 @@ body {
 .content address a {
   color: #798288;
 }
+
 /* insert some text before */
 .content address time::before {
   content: '\2022'; /* bullet */
   padding: 0 7px;
+}
+
+.content .article {
+  /* If height is set to a numeric value (like pixels, (r)em, percentages) then
+  if the content does not fit within the specified height, it will overflow. */
+  height: 100%;
+  overflow: visible;
+  /* inherit from parent */
+  text-align: inherit;
+}
+
+.article img {
+  max-width: 100%;
+  vertical-align: top;
+  max-height: 690px;
+}
+
+.article figure {
+  margin: 0 21px 16px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+.article figcaption {
+  font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+  font-size: 15px;
+  color: #798288;
+  padding: 12px 21px 0;
+  line-height: 18px;
+  vertical-align: top;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.article p {
+  margin: 0 21px 12px;
+  word-wrap: break-word;
+  padding: 0;
+}
+
+.article h4 {
+  font-size: 24px;
+  margin: 18px 21px 7px;
+  font-family: CustomSansSerif,'Lucida Grande',Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  padding: 0;
+}
+
+.article ul {
+  margin: 21px;
+  list-style: none;
+}
+
+.article li::before {
+  content: '\25CF';
+  padding: 1px 15px 0 0;
+  width: 78px;
+  margin-left: -1.7em;
+  list-style-position: outside;
+  list-style-type: none;
 }
