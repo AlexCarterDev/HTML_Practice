@@ -18,6 +18,10 @@ Assumptions about page structure:
           ... - hide
         tl_article_buttons - hide for not author (edit and publish buttons)
 
+Notes:
+  don't use class names same as html tags, firefox inspect elements will
+not show that css property.
+
 -->
 <html>
 
@@ -26,11 +30,12 @@ Assumptions about page structure:
 </head>
 
 <body>
+  
   <div class="page_wrap">
     <div class="page">
       <main class="content">
 
-        <header class="header">
+        <header class="article_header">
           <h1>Jupiter</h1>
           <address>
             <!-- The rel attribute specifies the relationship between the current document and the linked document. -->
