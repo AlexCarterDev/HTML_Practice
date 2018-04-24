@@ -3,7 +3,6 @@
 This document design based on: https://blacktie.co/demo/instant/index.html
 Original document was created with bootstrap framework. Doc have a very clear
 and simple html structure.
-
 -->
 <html>
 <head>
@@ -11,14 +10,66 @@ and simple html structure.
 </head>
 <body>
   <!-- Static, fixed top navigation bar -->
+  <div id="navbar_wrap">
+    <nav>
+      <ul class="navbar">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#works">Works</a></li>
+      </ul>
+    </nav>
+  </div>
 
   <!-- Header-->
+  <div id="header_wrap">
+    <header>
+      <h1>Hello World</h1>
+    </header>
+  </div>
 
-  <!-- Portfolio -->
+  <!-- Used as link for jump here -->
+  <section id="works"></section>
+
+  <!-- Photos -->
+  <div id="photos_wrap">
+    <div class="photos">
+      <h1>Photos</h1>
+      <a href="">
+        <img src="" alt="photo1">
+      </a>
+      <a href="">
+        <img src="" alt="photo2">
+      </a>
+      <a href="">
+        <img src="" alt="photo3">
+      </a>
+    </div>
+  </div>
 
   <!-- Social Bar -->
+  <div id="social_wrap">
+    <div class="social">
+      <a href="">
+        <img src="" alt="facebook">
+      </a>
+      <a href="">
+        <img src="" alt="twitter">
+      </a>
+      <a href="">
+        <img src="" alt="linkedin">
+      </a>
+    </div>
+  </div>
 
   <!-- Footer -->
+  <div id="footer_wrap">
+    <footer>
+      <p>Alex Carter</p>
+      <a href="">FAQ</a>
+      <a href="">Privacy Policy</a>
+      <a href="">Contact Us</a>
+    </footer>
+  </div>
 
 </body>
 </html>
