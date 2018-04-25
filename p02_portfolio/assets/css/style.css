@@ -15,6 +15,7 @@ body {
   box-sizing: border-box;
 }
 
+/* --- Navigation bar --- */
 #navbar_wrap {
   position: fixed;
   left: 0;
@@ -26,17 +27,10 @@ body {
   margin-right: 40px;
   min-height: 50px;
 }
-
 .navbar {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-.navbar-right {
-  float: right;
-}
-.navbar-left {
-  float: left;
 }
 .navbar li {
   float: left;
@@ -50,9 +44,30 @@ body {
   font-size: 17px;
   color: #1abc9c;
 }
+.navbar-right {
+  float: right;
+}
+.navbar-left {
+  float: left;
+}
 .navbar-hover li a:hover {
   border-bottom: 2px solid #1abc9c;
 }
+@media only screen and (max-width: 600px) {
+  .navbar-left {
+    width: 100%;
+  }
+  .navbar-right {
+    width: 100%;
+  }
+  .navbar-right li {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 90%;
+  }
+}
+
 
 #header_wrap, #social_wrap, #photos_wrap, #footer_wrap {
   visibility: hidden;
