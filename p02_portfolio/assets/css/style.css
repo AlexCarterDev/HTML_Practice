@@ -1,0 +1,59 @@
+::-moz-selection {
+  background: #8ed78d;
+  color: #006a1f;
+  text-shadow: none;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.42;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#navbar_wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* If position: fixed; - the right property sets the right edge of an element
+  to a unit to the right of the right edge of its nearest positioned ancestor. */
+  right: 0px;
+  margin-left: 40px;
+  margin-right: 40px;
+  min-height: 50px;
+}
+
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar-right {
+  float: right;
+}
+.navbar-left {
+  float: left;
+}
+.navbar li {
+  float: left;
+}
+.navbar li a {
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: black;
+  font-size: 17px;
+  color: #1abc9c;
+}
+.navbar-hover li a:hover {
+  border-bottom: 2px solid #1abc9c;
+}
+
+#header_wrap, #social_wrap, #photos_wrap, #footer_wrap {
+  visibility: hidden;
+}
