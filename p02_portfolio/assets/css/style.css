@@ -86,8 +86,57 @@ body {
   background: url(../images/back.jpg) no-repeat center top;
   color: white;
   font-size: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#social_wrap, #photos_wrap, #footer_wrap {
+#social_wrap {
+  /* this element will start on a new line */
+  visibility: collapse;
+}
+
+/* --- Photos --- */
+/* This looks correct in browser, but writing that was very hard for me.
+I need to learn more about CSS */
+#portfolio_wrap {
+  white-space: nowrap;
+  padding: 0;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 40px;
+  display: table;
+}
+#portfolio_wrap h1 {
+  font-size: 36px;
+  color: #4a4a4a;
+  padding-top: 0px;
+  margin: 0;
+}
+.photos {
+  display: block;
+  white-space: nowrap;
+}
+.photos img {
+  max-width: 100%;
+  height: auto;
+}
+.photo {
+  white-space: nowrap;
+  padding: 10px 10px 0px 10px;
+  width: 33%;
+  float: left;
+}
+.photo a {
+  text-decoration: none;
+}
+.photo img:hover {
+  opacity: 0.5;
+}
+
+
+#footer_wrap {
   visibility: hidden;
 }
