@@ -23,9 +23,10 @@ body {
   /* If position: fixed; - the right property sets the right edge of an element
   to a unit to the right of the right edge of its nearest positioned ancestor. */
   right: 0px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
   min-height: 50px;
+  max-width: 900px;
 }
 .navbar {
   list-style: none;
