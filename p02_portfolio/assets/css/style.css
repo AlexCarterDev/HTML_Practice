@@ -72,7 +72,6 @@ body {
   }
   .navbar-right li a {
     text-align: left;
-
   }
 }
 
@@ -117,14 +116,12 @@ I need to learn more about CSS */
 }
 .photos {
   display: block;
-  white-space: nowrap;
 }
 .photos img {
   max-width: 100%;
   height: auto;
 }
 .photo {
-  white-space: nowrap;
   padding: 10px 10px 0px 10px;
   width: 33%;
   float: left;
@@ -134,6 +131,13 @@ I need to learn more about CSS */
 }
 .photo img:hover {
   opacity: 0.5;
+}
+@media only screen and (max-width: 600px) {
+  .photo {
+    width: 95%;
+    float: none;
+    margin: auto;
+  }
 }
 
 
