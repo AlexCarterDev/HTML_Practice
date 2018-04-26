@@ -90,12 +90,7 @@ body {
   margin-right: auto;
 }
 
-#social_wrap {
-  /* this element will start on a new line */
-  visibility: collapse;
-}
-
-/* --- Photos --- */
+/* --- Portfolio --- */
 /* This looks correct in browser, but writing that was very hard for me.
 I need to learn more about CSS */
 #portfolio_wrap {
@@ -140,6 +135,30 @@ I need to learn more about CSS */
   }
 }
 
+/* --- Social links --- */
+#social_wrap {
+  margin-top: 40px;
+  text-align: center;
+  max-width: 1200px;
+  background: #f2f2f2;
+  margin-left: auto;
+  margin-right: auto;
+}
+#social_wrap div {
+  padding: 20px;
+}
+#social_wrap a {
+  text-decoration: none;
+  color: #4a4a4a;
+  margin: 0 40px;
+  font-size: 30px;
+}
+@media only screen and (max-width: 400px) {
+  #social_wrap a {
+    float: none;
+    margin: 0;
+  }
+}
 
 #footer_wrap {
   visibility: hidden;
