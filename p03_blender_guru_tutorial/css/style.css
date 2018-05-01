@@ -40,6 +40,15 @@ button {
   max-height: 120px;
 }
 
+/* remove default dotted outline when element focused (e.g. button, link) */
+.outline_none:focus, /* for image */
+.outline_none::-moz-focus-inner /* for button in firefox */
+{
+  outline: none;
+  border: none;
+  outline-style: none;
+}
+
 .main-navbar-item {
   float: right;
   padding: 5px 0;
