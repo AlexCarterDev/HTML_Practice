@@ -31,3 +31,40 @@
     padding-top: 60px;
   }
 }
+
+@media (max-width: 570px) {
+  .subscribe-img-container {
+    clear: both;
+    width: 100%;
+    margin: auto;
+  }
+  .subscribe-img-container img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    float: none;
+  }
+  .subscribe-main-container {
+    width: 100%;
+    padding: 30px 50px 40px 50px;
+    display: block;
+  }
+  .subscribe-main-container form {
+    width: 100%;
+    overflow: hidden;
+  }
+  .subscribe-main-container input {
+    width: 100%;
+    max-width: none;
+  }
+  .copyright{
+    width: 100%;
+    text-align: center;
+  }
+  .contact-us {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+  }
+}
