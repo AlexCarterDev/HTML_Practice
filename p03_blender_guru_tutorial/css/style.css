@@ -11,18 +11,26 @@ button {
   clear: both;
 }
 
+/* remove default dotted outline when element focused */
+.outline_none:focus, .outline_none::-moz-focus-inner {
+  outline: none;
+  border: none;
+  outline-style: none;
+}
+
+.content-wrap {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* --- Header structure --- */
 #main-header {
   background: #eee;
   max-height: 150px;
   width: 100%;
   box-sizing: border-box;
   overflow: hidden;
-}
-
-#main-header-wrap {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
 }
 #main-header-left {
   width: 30%;
@@ -35,20 +43,14 @@ button {
   clear: right;
   box-sizing: border-box;
 }
-.img-fit-parent {
+
+/* -- Headers items -- */
+/* logo image */
+.main-header-logo {
   width: auto;
   max-height: 120px;
 }
-
-/* remove default dotted outline when element focused (e.g. button, link) */
-.outline_none:focus, /* for image */
-.outline_none::-moz-focus-inner /* for button in firefox */
-{
-  outline: none;
-  border: none;
-  outline-style: none;
-}
-
+/* navigation bar */
 .main-navbar-item {
   float: right;
   padding: 5px 0;
@@ -71,8 +73,7 @@ button {
 #main-navbar:hover .main-navbar-item:not(:hover) {
   color: #aaa;
 }
-
-/* Search form */
+/* search form */
 #main-header-search {
   float: right;
   padding-top: 20px;
@@ -102,4 +103,39 @@ button {
   color: #999;
   font-size: 16px;
   padding: 5px 10px 10px 10px;
+}
+
+.content-header {
+  font-family: PT Sans, Helvetica, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 3.5px;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  margin-top: 10px;
+}
+.content-main {
+  margin-top: 10px;
+}
+.bloglist {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+.bloglist:nth-child(odd) {
+  padding-right: 10px;
+}
+.bloglist:nth-child(even) {
+  padding-left: 10px;
+}
+article[id^="post"] {
+  background: #ddd;
+  overflow: hidden;
+}
+.bloglist-item-img img {
+  border-image-repeat: stretch;
+  border-image-slice: 100%;
+  height: 270px;
 }
