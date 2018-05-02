@@ -1,0 +1,33 @@
+@media (max-width: 500px) {
+  #main-navbar, #main-header-search {
+    visibility: hidden;
+  }
+  #main-mobile-bar {
+    visibility: visible;
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    font-size: 25px;
+
+  }
+  #main-mobile-bar a{
+    color: #444;
+    text-decoration: none;
+    outline: none;
+  }
+  #main-header {
+    max-height: 50px;
+    position: fixed;
+    top: 0;
+  }
+  .content-wrap {
+    padding-top: 0;
+  }
+  .main-header-logo{
+    padding: 5px;
+    max-height: 40px;
+  }
+  .content-header {
+    padding-top: 60px;
+  }
+}

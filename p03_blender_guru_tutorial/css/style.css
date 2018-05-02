@@ -43,7 +43,12 @@ button {
   clear: right;
   box-sizing: border-box;
 }
-
+#main-mobile-bar {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 30px;
+}
 /* -- Headers items -- */
 /* logo image */
 .main-header-logo {
