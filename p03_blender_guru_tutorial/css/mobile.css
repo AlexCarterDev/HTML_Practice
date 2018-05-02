@@ -32,6 +32,21 @@
   }
 }
 
+@media (max-width: 400px) {
+  .bloglist {
+    width: 100%;
+  }
+  .bloglist:nth-child(odd) {
+    padding-right: 0;
+  }
+  .bloglist:nth-child(even) {
+    padding-left: 0;
+  }
+  .content-wrap {
+    padding: 0 10px 10px 10px;
+  }
+}
+
 @media (max-width: 570px) {
   .subscribe-img-container {
     clear: both;
