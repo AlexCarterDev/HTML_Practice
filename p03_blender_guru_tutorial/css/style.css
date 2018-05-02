@@ -171,3 +171,30 @@ figure[id^="post"] figcaption {
   /* im not using just border: none, because it may cause twitching */
   border: 1px transparent solid;
 }
+
+/* --- Footer --- */
+/* Social links */
+footer {
+  background: rgb(39, 45, 51);
+  color: rgb(245, 245, 245);
+}
+.social-links-wrap{
+  padding: 30px;
+  text-align: center;
+}
+.social-links {
+  display: inline-block;
+}
+.social-link {
+  text-decoration: none;
+  color: rgb(245, 245, 245);
+  margin: 0 5px;
+  font-size: 23px;
+  transition-property: color;
+  transition-duration: 170ms, 170ms;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s;
+}
+.social-links:hover .social-link:not(:hover) {
+  color: #aaa;
+}
