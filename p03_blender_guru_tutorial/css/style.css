@@ -116,7 +116,7 @@ button {
   margin-top: 10px;
 }
 .content-main {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .bloglist {
   width: 50%;
@@ -131,8 +131,13 @@ button {
   padding-left: 10px;
 }
 figure[id^="post"] {
-  background: #ddd;
   overflow: hidden;
+}
+figure[id^="post"] figcaption {
+  margin-top: 5px;
+  font-family: PT Sans, Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
 }
 .bloglist-item-link img {
   border-image-repeat: stretch;
