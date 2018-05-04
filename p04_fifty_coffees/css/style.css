@@ -1,6 +1,7 @@
 /* temoporary hidden */
-#page-wrap, #footer-wrap {
+#footer-wrap {
   visibility: hidden;
+  display: none;
 }
 
 /* --- default element styles --- */
@@ -11,7 +12,6 @@ body {
   line-height: 1.7em;
   color: #424242;
   font-size: 16px;
-  overflow: hidden;
   margin: 0;
 }
 a {
@@ -27,6 +27,9 @@ a:hover {
 .active-header-link {
   color: #38c3ff;
 }
+.clr {
+  clear: both;
+}
 
 /* --- Wraps --- */
 #site {
@@ -35,10 +38,16 @@ a:hover {
 #canvas {
   margin: 0 auto;
   max-width: 850px;
-  text-align: center;
+  overflow: hidden;
 }
 #main-nav-wrap {
   margin-top: 60px;
+}
+#page-wrap {
+  margin-top: 50px;
+}
+#page-social-link-wrap {
+  text-align: right;
 }
 
 /* --- Visual elements --- */
@@ -50,6 +59,7 @@ a:hover {
   line-height: 45px;
   margin: 0;
   text-transform: none;
+  text-align: center;
 }
 .logo:hover {
   color: #38c3ff;
@@ -82,5 +92,31 @@ a:hover {
   margin: 0 10px;
 }
 .main-nav {
+  text-align: center;
   text-transform: uppercase;
+}
+
+/* social links */
+.social-links svg {
+  border-radius: 50%;
+  fill: white;
+  background-color: black;
+  width: 36px;
+  height: 36px;
+  transition-property: background-color;
+  transition-duration: 170ms, 170ms;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s;
+}
+.social-links-1:hover svg:not(:hover) {
+  background-color: #aaa;
+}
+.social-links-2:hover svg:not(:hover) {
+  background-color: #aaa;
+}
+
+/* image */
+#image-block img {
+  width: 100%;
+  height: auto;
 }
