@@ -1,0 +1,86 @@
+/* temoporary hidden */
+#page-wrap, #footer-wrap {
+  visibility: hidden;
+}
+
+/* --- default element styles --- */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.7em;
+  color: #424242;
+  font-size: 16px;
+  overflow: hidden;
+  margin: 0;
+}
+a {
+  color: #1955fa;
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: #38c3ff;
+}
+
+/* --- Utils --- */
+.active-header-link {
+  color: #38c3ff;
+}
+
+/* --- Wraps --- */
+#site {
+  padding: 70px 50px;
+}
+#canvas {
+  margin: 0 auto;
+  max-width: 850px;
+  text-align: center;
+}
+#main-nav-wrap {
+  margin-top: 60px;
+}
+
+/* --- Visual elements --- */
+/* logo */
+.logo {
+  color: #424242;
+  font-size: 45px;
+  font-family: 'Short Stack', cursive;
+  line-height: 45px;
+  margin: 0;
+  text-transform: none;
+}
+.logo:hover {
+  color: #38c3ff;
+}
+
+/* dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+}
+.dropdown-content a {
+    display: block;
+    padding: 5px 0;
+    text-align: left;
+}
+.dropdown-content a:first-child {
+  margin-top: 20px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* navigation bar */
+.main-nav > div, .main-nav > a {
+  margin: 0 10px;
+}
+.main-nav {
+  text-transform: uppercase;
+}
