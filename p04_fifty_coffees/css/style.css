@@ -49,6 +49,9 @@ a:hover {
 #page-social-link-wrap {
   text-align: right;
 }
+#logo-wrap {
+  text-align: center;
+}
 
 /* --- Visual elements --- */
 /* logo */
@@ -60,6 +63,7 @@ a:hover {
   margin: 0;
   text-transform: none;
   text-align: center;
+  display: inline-block;
 }
 .logo:hover {
   color: #38c3ff;
