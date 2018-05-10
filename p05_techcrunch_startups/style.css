@@ -1,3 +1,77 @@
+/* Temporary hidden */
 .content, site-footer {
   visibility: hidden;
+}
+
+/* General styles */
+html {
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  cursor: default;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-size:16px;
+  line-height: 24px;
+  text-rendering: optimizeLegibility;
+}
+body {
+  margin: 0;
+}
+::-moz-selection {
+  background-color: #b3d4fc;
+  color: #000;
+  text-shadow: none;
+}
+.text-green {
+  color: #00a562;
+}
+
+.site-navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 30px;
+  padding-top: 30px;
+  width: 9em;
+  letter-spacing: .01em;
+  font-size: 1.1rem;
+}
+.site-navigation ul {
+  list-style-type: none;
+  padding-left: 0;
+  line-height: 1.7;
+}
+.site-navigation .nav-main-menu a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #777;
+}
+.site-navigation .nav-main-menu a:hover {
+  color: #00a562;
+}
+.site-navigation .search-field {
+  color: #000;
+  font-weight: bold;
+  font-size: 0.8em;
+  letter-spacing: 0.07em;
+}
+.site-navigation .search-field i {
+  color: #777;
+}
+.site-navigation .nav-trending-topics {
+  line-height: 1.4em;
+}
+.site-navigation .nav-trending-topics a {
+  color: #00a562;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.site-navigation .desktop-nav-login-links a {
+  color: #000;
+  font-weight: bold;
+  font-size: 0.7em;
+  text-decoration: none;
+}
+.site-navigation .desktop-nav-login-links a:hover {
+  color: #00a562;
 }
