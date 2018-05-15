@@ -1,5 +1,5 @@
 /* Temporary hidden */
-.content, site-footer {
+.content, .site-navigation {
   visibility: hidden;
 }
 
@@ -74,4 +74,38 @@ body {
 }
 .site-navigation .desktop-nav-login-links a:hover {
   color: #00a562;
+}
+.site-footer {
+  background-color: #eee;
+  padding: 1.5em;
+}
+.site-footer ul {
+  padding: 0;
+  margin: 0;
+}
+.site-footer ul li {
+  list-style-type: none;
+  display: inline-block;
+  float: left;
+  margin-right: 1.4em;
+}
+.site-footer a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s border;
+  font-size: 0.8em
+}
+.site-footer a:hover {
+  border-bottom: 1px solid black;
+}
+.site-footer span {
+  color: #aaa;
+}
+.site-footer p {
+  margin-bottom: 0;
+}
+.clear-fix {
+  clear: both;
 }
